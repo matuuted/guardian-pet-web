@@ -26474,15 +26474,15 @@ _.ch=c
 _.CW=d
 _.cx=!1
 _.cy=e},
-a8Q:function a8Q(a,b,c){var _=this
+a8Q:function a8Q(a,b,c,d){var _=this
 _.a=a
-_.b=1883
-_.c=b
+_.b=b
+_.c=c
 _.d=!1
 _.as=_.Q=_.y=null
 _.at=0
 _.ay=null
-_.ch=c
+_.ch=d
 _.k1=_.cx=_.CW=null},
 aLe(a){var s,r,q
 for(s=a.length,r=$.ub===3,q=0;q<s;++q)if(r)if(a.charCodeAt(q)>127)throw A.i(A.cd("mqtt_client::MQTTEncoding: The input string has extended UTF characters, which are not supported"))},
@@ -43108,7 +43108,7 @@ ana(a,b,c,d){var s=0,r=A.L(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g
 var $async$qC=A.M(function(e,f){if(e===1){o.push(f)
 s=p}for(;;)switch(s){case 0:if(n.y){s=1
 break}k="guardian-pet-app-"+Date.now()
-m=new A.a8Q("wss://"+a+":"+c+"/mqtt",k,new A.hR(B.c6,B.co,B.eg))
+m=new A.a8Q("wss://"+a+"/mqtt",c,k,new A.hR(B.c6,B.co,B.eg))
 $.aAL=!1
 $.aLh=!0
 m.at=30
